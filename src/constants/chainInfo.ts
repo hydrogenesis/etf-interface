@@ -1,5 +1,5 @@
 import celoCircleLogoUrl from 'assets/images/celoCircle.png'
-import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
+import ethereumLogoUrl from 'assets/images/etf-logo.png'
 import optimismCircleLogoUrl from 'assets/images/optimismCircle.png'
 import polygonCircleLogoUrl from 'assets/images/polygonCircle.png'
 import { default as arbitrumCircleLogoUrl, default as arbitrumLogoUrl } from 'assets/svg/arbitrum_logo.svg'
@@ -61,7 +61,7 @@ const CHAIN_INFO: ChainInfoMap = {
     infoLink: 'https://info.uniswap.org/#/',
     label: 'EthereumFair',
     logoUrl: ethereumLogoUrl,
-    nativeCurrency: { name: 'ETF', symbol: 'ETF', decimals: 18 },
+    nativeCurrency: { name: 'Ethereum Fair', symbol: 'ETF', decimals: 18 },
     color: colorsDark.chain_1,
   },
   [SupportedChainId.RINKEBY]: {

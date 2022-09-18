@@ -15,31 +15,31 @@ export const OPTIMISM_LIST = 'https://static.optimism.io/optimism.tokenlist.json
 export const ARBITRUM_LIST = 'https://bridge.arbitrum.io/token-list-42161.json'
 export const CELO_LIST = 'https://celo-org.github.io/celo-token-list/celo.tokenlist.json'
 
-export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST]
+export const UNSUPPORTED_LIST_URLS: string[] = []
 
 // this is the default list of lists that are exposed to users
 // lower index == higher priority for token import
 const DEFAULT_LIST_OF_LISTS_TO_DISPLAY: string[] = [
-  UNI_LIST,
-  UNI_EXTENDED_LIST,
-  COMPOUND_LIST,
-  AAVE_LIST,
-  CMC_ALL_LIST,
-  COINGECKO_LIST,
-  KLEROS_LIST,
-  GEMINI_LIST,
-  WRAPPED_LIST,
-  SET_LIST,
-  ROLL_LIST,
-  ARBITRUM_LIST,
-  OPTIMISM_LIST,
-  CELO_LIST,
+  // UNI_LIST,
+  // UNI_EXTENDED_LIST,
+  // COMPOUND_LIST,
+  // AAVE_LIST,
+  // CMC_ALL_LIST,
+  // COINGECKO_LIST,
+  // KLEROS_LIST,
+  // GEMINI_LIST,
+  // WRAPPED_LIST,
+  // SET_LIST,
+  // ROLL_LIST,
+  // ARBITRUM_LIST,
+  // OPTIMISM_LIST,
+  // CELO_LIST,
 ]
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [
-  ...DEFAULT_LIST_OF_LISTS_TO_DISPLAY,
-  ...UNSUPPORTED_LIST_URLS, // need to load dynamic unsupported tokens as well
+  // ...DEFAULT_LIST_OF_LISTS_TO_DISPLAY,
+  // ...UNSUPPORTED_LIST_URLS, // need to load dynamic unsupported tokens as well
 ]
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS: string[] = [UNI_LIST, GEMINI_LIST]
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = []

@@ -350,35 +350,35 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     SupportedChainId.MAINNET,
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     18,
-    'WETH',
+    'WETF',
     'Wrapped Ether'
   ),
   [SupportedChainId.OPTIMISM]: new Token(
     SupportedChainId.OPTIMISM,
     '0x4200000000000000000000000000000000000006',
     18,
-    'WETH',
+    'WETF',
     'Wrapped Ether'
   ),
   [SupportedChainId.OPTIMISTIC_KOVAN]: new Token(
     SupportedChainId.OPTIMISTIC_KOVAN,
     '0x4200000000000000000000000000000000000006',
     18,
-    'WETH',
+    'WETF',
     'Wrapped Ether'
   ),
   [SupportedChainId.ARBITRUM_ONE]: new Token(
     SupportedChainId.ARBITRUM_ONE,
     '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
     18,
-    'WETH',
+    'WETF',
     'Wrapped Ether'
   ),
   [SupportedChainId.ARBITRUM_RINKEBY]: new Token(
     SupportedChainId.ARBITRUM_RINKEBY,
     '0xB47e6A5f8b33b3F17603C83a0535A9dcD7E32681',
     18,
-    'WETH',
+    'WETF',
     'Wrapped Ether'
   ),
   [SupportedChainId.POLYGON]: new Token(
