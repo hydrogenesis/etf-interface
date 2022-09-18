@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-09 20:05\n"
+"PO-Revision-Date: 2022-09-14 15:05\n"
 "Last-Translator: \n"
 "Language: sr_SP\n"
 "Language-Team: Serbian (Cyrillic)\n"
@@ -59,6 +59,10 @@ msgstr "- Уклоните примаоца"
 msgid "0 UNI / week"
 msgstr "0 УНИ / недељно"
 
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "24H volume"
+msgstr "24Х волуме"
+
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
 msgstr "25%"
@@ -66,6 +70,14 @@ msgstr "25%"
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "50%"
 msgstr "50%"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W high"
+msgstr "52В хигх"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W low"
+msgstr "52В лов"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "75%"
@@ -121,7 +133,7 @@ msgid "A swap of this size may have a high price impact, given the current liqui
 msgstr "Замена ове величине може имати велики утицај на цену, с обзиром на тренутну ликвидност у фонду. Може постојати велика разлика између количине вашег улазног токена и онога што ћете добити у излазном токену"
 
 #: src/components/Menu/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "About"
 msgstr "О"
 
@@ -588,7 +600,7 @@ msgstr "Повезан са"
 msgid "Connecting..."
 msgstr "Повезивање..."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/AddressSection.tsx
 msgid "Contract address"
 msgstr "Адреса уговора"
 
@@ -976,7 +988,7 @@ msgid "Help center"
 msgstr "Центар за помоћ"
 
 #: src/components/FeeSelector/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Hide"
 msgstr "Сакрити"
 
@@ -1178,8 +1190,8 @@ msgstr "Управљање листама токена"
 msgid "Manage this pool."
 msgstr "Управљајте овим фондом."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
-msgid "Market cap"
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "Market Cap"
 msgstr "Тржишна капитализација"
 
 #: src/components/CurrencyInputPanel/SwapCurrencyInputPanel.tsx
@@ -1270,7 +1282,7 @@ msgstr "НФТ Цоллецтионс"
 msgid "NFTs"
 msgstr "НФТс"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Name not found"
 msgstr "Име није пронађено"
 
@@ -1323,7 +1335,7 @@ msgstr "Није пронађен ниједан предлог."
 msgid "No results found."
 msgstr "Нема резултата."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "No token information available"
 msgstr "Нема доступних информација о токену"
 
@@ -1569,7 +1581,7 @@ msgstr "Стати у ред"
 msgid "Rates"
 msgstr "Стопе"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Read more"
 msgstr "Опширније"
 
@@ -1836,7 +1848,7 @@ msgstr "Замена"
 msgid "Swapping {0} {1} for {2} {3}"
 msgstr "Замена {0} {1} за {2} {3}"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Symbol not found"
 msgstr "Симбол није пронађен"
 

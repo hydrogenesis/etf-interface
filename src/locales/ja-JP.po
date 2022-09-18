@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-09 20:05\n"
+"PO-Revision-Date: 2022-09-14 15:04\n"
 "Last-Translator: \n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -59,6 +59,10 @@ msgstr "宛先を削除"
 msgid "0 UNI / week"
 msgstr "0 UNI / 週"
 
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "24H volume"
+msgstr "24時間ボリューム"
+
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
 msgstr "25%"
@@ -66,6 +70,14 @@ msgstr "25%"
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "50%"
 msgstr "50%"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W high"
+msgstr "52W高"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W low"
+msgstr "52W低"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "75%"
@@ -121,7 +133,7 @@ msgid "A swap of this size may have a high price impact, given the current liqui
 msgstr "プールの現在の流動性を考えると、このサイズのスワップは価格に大きな影響を与える可能性があります。入力トークンの量と出力トークンで受け取る量には大きな違いがある可能性があります"
 
 #: src/components/Menu/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "About"
 msgstr "概要"
 
@@ -588,7 +600,7 @@ msgstr "つながっている"
 msgid "Connecting..."
 msgstr "接続中..."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/AddressSection.tsx
 msgid "Contract address"
 msgstr "契約住所"
 
@@ -976,7 +988,7 @@ msgid "Help center"
 msgstr "ヘルプセンター"
 
 #: src/components/FeeSelector/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Hide"
 msgstr "非表示"
 
@@ -1178,8 +1190,8 @@ msgstr "トークンリストを管理"
 msgid "Manage this pool."
 msgstr "プールを管理"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
-msgid "Market cap"
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "Market Cap"
 msgstr "時価総額"
 
 #: src/components/CurrencyInputPanel/SwapCurrencyInputPanel.tsx
@@ -1270,7 +1282,7 @@ msgstr "NFTコレクション"
 msgid "NFTs"
 msgstr "NFT"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Name not found"
 msgstr "名前が見つかりません"
 
@@ -1323,7 +1335,7 @@ msgstr "提案が見つかりません。"
 msgid "No results found."
 msgstr "結果が見つかりませんでした。"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "No token information available"
 msgstr "トークン情報がありません"
 
@@ -1569,7 +1581,7 @@ msgstr "キューイング"
 msgid "Rates"
 msgstr "レート"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Read more"
 msgstr "続きを読む"
 
@@ -1836,7 +1848,7 @@ msgstr "スワッピング"
 msgid "Swapping {0} {1} for {2} {3}"
 msgstr "{0} {1} を {2} {3} にスワップ中"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Symbol not found"
 msgstr "シンボルが見つかりません"
 

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-09 20:05\n"
+"PO-Revision-Date: 2022-09-14 15:04\n"
 "Last-Translator: \n"
 "Language: fi_FI\n"
 "Language-Team: Finnish\n"
@@ -59,6 +59,10 @@ msgstr "- Poista vastaanottaja"
 msgid "0 UNI / week"
 msgstr "0 UNI / viikko"
 
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "24H volume"
+msgstr "24 tunnin tilavuus"
+
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
 msgstr "25%"
@@ -66,6 +70,14 @@ msgstr "25%"
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "50%"
 msgstr "50%"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W high"
+msgstr "52W korkea"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W low"
+msgstr "52W alhainen"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "75%"
@@ -121,7 +133,7 @@ msgid "A swap of this size may have a high price impact, given the current liqui
 msgstr "Tämän kokoisella swapilla voi olla suuri hintavaikutus, kun otetaan huomioon poolin nykyinen likviditeetti. Saattaa olla suuri ero syöttötunnuksesi määrän ja sen välillä, mitä saat ulostulotunnuksessa"
 
 #: src/components/Menu/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "About"
 msgstr "Tietoa"
 
@@ -588,7 +600,7 @@ msgstr "Yhdistetty"
 msgid "Connecting..."
 msgstr "Yhdistetään..."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/AddressSection.tsx
 msgid "Contract address"
 msgstr "Sopimusosoite"
 
@@ -976,7 +988,7 @@ msgid "Help center"
 msgstr "Ohjekeskus"
 
 #: src/components/FeeSelector/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Hide"
 msgstr "Piilottaa"
 
@@ -1178,8 +1190,8 @@ msgstr "Hallitse rahakeluetteloita"
 msgid "Manage this pool."
 msgstr "Hallitse tätä poolia."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
-msgid "Market cap"
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "Market Cap"
 msgstr "Markkina-arvo"
 
 #: src/components/CurrencyInputPanel/SwapCurrencyInputPanel.tsx
@@ -1270,7 +1282,7 @@ msgstr "NFT-kokoelmat"
 msgid "NFTs"
 msgstr "NFT:t"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Name not found"
 msgstr "Nimeä ei löydy"
 
@@ -1323,7 +1335,7 @@ msgstr "Ehdotuksia ei löytynyt."
 msgid "No results found."
 msgstr "Tuloksia ei löytynyt."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "No token information available"
 msgstr "Tunnustietoja ei ole saatavilla"
 
@@ -1569,7 +1581,7 @@ msgstr "Jonotus"
 msgid "Rates"
 msgstr "Kurssit"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Read more"
 msgstr "Lue lisää"
 
@@ -1836,7 +1848,7 @@ msgstr "Vaihto"
 msgid "Swapping {0} {1} for {2} {3}"
 msgstr "Vaihdetaan {0} {1} kohteeseen {2} {3}"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Symbol not found"
 msgstr "Symbolia ei löydy"
 

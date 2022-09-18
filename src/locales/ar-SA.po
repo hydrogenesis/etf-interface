@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-09 20:05\n"
+"PO-Revision-Date: 2022-09-14 15:04\n"
 "Last-Translator: \n"
 "Language: ar_SA\n"
 "Language-Team: Arabic\n"
@@ -59,6 +59,10 @@ msgstr "- إزالة المستلم"
 msgid "0 UNI / week"
 msgstr "0 UNI / أسبوع"
 
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "24H volume"
+msgstr "حجم 24H"
+
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
 msgstr "25%"
@@ -66,6 +70,14 @@ msgstr "25%"
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "50%"
 msgstr "50%"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W high"
+msgstr "ارتفاع 52 واط"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W low"
+msgstr "52 واط منخفض"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "75%"
@@ -121,7 +133,7 @@ msgid "A swap of this size may have a high price impact, given the current liqui
 msgstr "قد يكون لمقايضة بهذا الحجم تأثير كبير على السعر ، بالنظر إلى السيولة الحالية في المجمع. قد يكون هناك اختلاف كبير بين مقدار رمز الإدخال الخاص بك وما ستحصل عليه في رمز الإخراج"
 
 #: src/components/Menu/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "About"
 msgstr "حول"
 
@@ -588,7 +600,7 @@ msgstr "متصل مع"
 msgid "Connecting..."
 msgstr "توصيل..."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/AddressSection.tsx
 msgid "Contract address"
 msgstr "عنوان العقد"
 
@@ -976,7 +988,7 @@ msgid "Help center"
 msgstr "مركز المساعدة"
 
 #: src/components/FeeSelector/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Hide"
 msgstr "يخفي"
 
@@ -1178,8 +1190,8 @@ msgstr "إدارة قوائم الرمز المميز"
 msgid "Manage this pool."
 msgstr "إدارة هذه المجموعة."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
-msgid "Market cap"
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "Market Cap"
 msgstr "القيمة السوقية"
 
 #: src/components/CurrencyInputPanel/SwapCurrencyInputPanel.tsx
@@ -1270,7 +1282,7 @@ msgstr "مجموعات NFT"
 msgid "NFTs"
 msgstr "NFTs"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Name not found"
 msgstr "الاسم غير موجود"
 
@@ -1323,7 +1335,7 @@ msgstr "لا توجد مقترحات."
 msgid "No results found."
 msgstr "لا توجد نتائج."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "No token information available"
 msgstr "لا توجد معلومات رمزية متاحة"
 
@@ -1569,7 +1581,7 @@ msgstr "قائمة الانتظار"
 msgid "Rates"
 msgstr "الأسعار"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Read more"
 msgstr "اقرأ أكثر"
 
@@ -1836,7 +1848,7 @@ msgstr "مبادلة"
 msgid "Swapping {0} {1} for {2} {3}"
 msgstr "مبادلة {0} {1} مقابل {2} {3}"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Symbol not found"
 msgstr "لم يتم العثور على الرمز"
 

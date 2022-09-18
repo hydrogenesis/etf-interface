@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-09 20:05\n"
+"PO-Revision-Date: 2022-09-14 15:04\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
 "Language-Team: Korean\n"
@@ -59,6 +59,10 @@ msgstr "- 받는 사람 제거"
 msgid "0 UNI / week"
 msgstr "0 UNI / 주"
 
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "24H volume"
+msgstr "24시간 볼륨"
+
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
 msgstr "25 %"
@@ -66,6 +70,14 @@ msgstr "25 %"
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "50%"
 msgstr "50 %"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W high"
+msgstr "52W 높이"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W low"
+msgstr "52W 낮음"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "75%"
@@ -121,7 +133,7 @@ msgid "A swap of this size may have a high price impact, given the current liqui
 msgstr "풀의 현재 유동성을 고려할 때 이 크기의 스왑은 가격에 큰 영향을 미칠 수 있습니다. 입력 토큰의 양과 출력 토큰으로 받게 될 금액 사이에는 큰 차이가 있을 수 있습니다."
 
 #: src/components/Menu/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "About"
 msgstr "정보"
 
@@ -588,7 +600,7 @@ msgstr "와 연결되다"
 msgid "Connecting..."
 msgstr "연결 중..."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/AddressSection.tsx
 msgid "Contract address"
 msgstr "계약 주소"
 
@@ -976,7 +988,7 @@ msgid "Help center"
 msgstr "지원 센터"
 
 #: src/components/FeeSelector/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Hide"
 msgstr "숨기기"
 
@@ -1178,8 +1190,8 @@ msgstr "토큰 목록 관리"
 msgid "Manage this pool."
 msgstr "이 풀을 관리합니다."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
-msgid "Market cap"
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "Market Cap"
 msgstr "시가총액"
 
 #: src/components/CurrencyInputPanel/SwapCurrencyInputPanel.tsx
@@ -1270,7 +1282,7 @@ msgstr "NFT 컬렉션"
 msgid "NFTs"
 msgstr "NFT"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Name not found"
 msgstr "이름을 찾을 수 없습니다"
 
@@ -1323,7 +1335,7 @@ msgstr "제안이 없습니다."
 msgid "No results found."
 msgstr "결과가 없습니다."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "No token information available"
 msgstr "사용 가능한 토큰 정보가 없습니다."
 
@@ -1569,7 +1581,7 @@ msgstr "큐잉"
 msgid "Rates"
 msgstr "요율"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Read more"
 msgstr "더 읽기"
 
@@ -1836,7 +1848,7 @@ msgstr "스와핑"
 msgid "Swapping {0} {1} for {2} {3}"
 msgstr "{0} {1} 을 {2} {3}(으)로 스왑"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Symbol not found"
 msgstr "기호를 찾을 수 없음"
 

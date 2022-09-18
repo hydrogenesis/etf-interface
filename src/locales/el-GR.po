@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: uniswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-09 20:05\n"
+"PO-Revision-Date: 2022-09-14 15:04\n"
 "Last-Translator: \n"
 "Language: el_GR\n"
 "Language-Team: Greek\n"
@@ -59,6 +59,10 @@ msgstr "- Αφαίρεση παραλήπτη"
 msgid "0 UNI / week"
 msgstr "0 UNI / εβδομάδα"
 
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "24H volume"
+msgstr "Ένταση 24 ωρών"
+
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
 msgstr "25%"
@@ -66,6 +70,14 @@ msgstr "25%"
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "50%"
 msgstr "50%"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W high"
+msgstr "52W ύψος"
+
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "52W low"
+msgstr "52W χαμηλή"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "75%"
@@ -121,7 +133,7 @@ msgid "A swap of this size may have a high price impact, given the current liqui
 msgstr "Μια ανταλλαγή αυτού του μεγέθους μπορεί να έχει υψηλό αντίκτυπο στην τιμή, δεδομένης της τρέχουσας ρευστότητας στη συγκέντρωση. Μπορεί να υπάρχει μεγάλη διαφορά μεταξύ της ποσότητας του διακριτικού εισόδου και αυτού που θα λάβετε στο διακριτικό εξόδου"
 
 #: src/components/Menu/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "About"
 msgstr "Σχετικά με εμάς"
 
@@ -588,7 +600,7 @@ msgstr "Συνδεδεμένη με"
 msgid "Connecting..."
 msgstr "Συνδετικός..."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/AddressSection.tsx
 msgid "Contract address"
 msgstr "Διεύθυνση συμβολαίου"
 
@@ -976,7 +988,7 @@ msgid "Help center"
 msgstr "Κέντρο βοηθείας"
 
 #: src/components/FeeSelector/index.tsx
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Hide"
 msgstr "Κρύβω"
 
@@ -1178,9 +1190,9 @@ msgstr "Διαχείριση Λίστας μάρκας"
 msgid "Manage this pool."
 msgstr "Διαχείριση αυτής της δεξαμενής."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
-msgid "Market cap"
-msgstr "Κεφάλαιο αγοράς"
+#: src/components/Tokens/TokenDetails/StatsSection.tsx
+msgid "Market Cap"
+msgstr "Market Cap"
 
 #: src/components/CurrencyInputPanel/SwapCurrencyInputPanel.tsx
 #: src/pages/RemoveLiquidity/V3.tsx
@@ -1270,7 +1282,7 @@ msgstr "Συλλογές NFT"
 msgid "NFTs"
 msgstr "NFTs"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Name not found"
 msgstr "Το όνομα δεν βρέθηκε"
 
@@ -1323,7 +1335,7 @@ msgstr "Δεν βρέθηκαν προτάσεις."
 msgid "No results found."
 msgstr "Δεν βρέθηκαν αποτελέσματα."
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "No token information available"
 msgstr "Δεν υπάρχουν διαθέσιμες πληροφορίες συμβολικών"
 
@@ -1569,7 +1581,7 @@ msgstr "Ουρά"
 msgid "Rates"
 msgstr "Τιμές"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/About.tsx
 msgid "Read more"
 msgstr "Διαβάστε περισσότερα"
 
@@ -1836,7 +1848,7 @@ msgstr "Ανταλλαγή"
 msgid "Swapping {0} {1} for {2} {3}"
 msgstr "Ανταλλαγή {0} {1} για {2} {3}"
 
-#: src/components/Tokens/TokenDetails/TokenDetail.tsx
+#: src/components/Tokens/TokenDetails/ChartSection.tsx
 msgid "Symbol not found"
 msgstr "Το σύμβολο δεν βρέθηκε"
 
