@@ -12,7 +12,6 @@ import { colorsDark } from 'theme/colors'
 import { SupportedChainId, SupportedL1ChainId, SupportedL2ChainId } from './chains'
 import { ARBITRUM_LIST, CELO_LIST, OPTIMISM_LIST } from './lists'
 
-
 export enum NetworkType {
   L1,
   L2,
