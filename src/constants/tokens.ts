@@ -415,6 +415,9 @@ function getCeloNativeCurrency(chainId: number) {
 function isMatic(chainId: number): chainId is SupportedChainId.POLYGON | SupportedChainId.POLYGON_MUMBAI {
   return chainId === SupportedChainId.POLYGON_MUMBAI || chainId === SupportedChainId.POLYGON
 }
+function isEthf(chainId: number): chainId is SupportedChainId.MAINNET {
+  return chainId === SupportedChainId.MAINNET
+}
 
 class MaticNativeCurrency extends NativeCurrency {
   equals(other: Currency): boolean {
@@ -434,6 +437,24 @@ class MaticNativeCurrency extends NativeCurrency {
   }
 }
 
+class EthfNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isEthf(this.chainId)) throw new Error('Not ethf')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isEthf(chainId)) throw new Error('Not ethf')
+    super(chainId, 18, 'ETHF', 'Ether')
+  }
+}
+
 export class ExtendedEther extends Ether {
   public get wrapped(): Token {
     const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
@@ -449,11 +470,14 @@ export class ExtendedEther extends Ether {
 }
 
 const cachedNativeCurrency: { [chainId: number]: NativeCurrency | Token } = {}
+// @ts-ignore
 export function nativeOnChain(chainId: number): NativeCurrency | Token {
   if (cachedNativeCurrency[chainId]) return cachedNativeCurrency[chainId]
   let nativeCurrency: NativeCurrency | Token
   if (isMatic(chainId)) {
     nativeCurrency = new MaticNativeCurrency(chainId)
+  } else if (isEthf(chainId)) {
+    nativeCurrency = new EthfNativeCurrency(chainId)
   } else if (isCelo(chainId)) {
     nativeCurrency = getCeloNativeCurrency(chainId)
   } else {
