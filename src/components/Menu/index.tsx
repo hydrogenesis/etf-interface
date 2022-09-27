@@ -16,7 +16,7 @@ import {
   // FileText,
   Flag,
   Globe,
-  HelpCircle,
+  // HelpCircle,
   // Info,
   MessageCircle,
   Moon,
@@ -252,19 +252,19 @@ export default function Menu() {
                     {/*  </div>*/}
                     {/*  <Info opacity={0.6} size={16} />*/}
                     {/*</MenuItem>*/}
-                    <MenuItem href="https://help.uniswap.org/">
-                      <div>
-                        <Trans>Help Center</Trans>
-                      </div>
-                      <HelpCircle opacity={0.6} size={16} />
-                    </MenuItem>
+                    {/*<MenuItem href="https://help.uniswap.org/">*/}
+                    {/*  <div>*/}
+                    {/*    <Trans>Help Center</Trans>*/}
+                    {/*  </div>*/}
+                    {/*  <HelpCircle opacity={0.6} size={16} />*/}
+                    {/*</MenuItem>*/}
                     {/*<MenuItem href="https://uniswap.canny.io/feature-requests">*/}
                     {/*  <div>*/}
                     {/*    <Trans>Request Features</Trans>*/}
                     {/*  </div>*/}
                     {/*  <Coffee opacity={0.6} size={16} />*/}
                     {/*</MenuItem>*/}
-                    <MenuItem href="https://t.me/etfuniswap">
+                    <MenuItem href="https://t.me/ethfuniswap">
                       <div>
                         <Trans>Discord</Trans>
                       </div>
