@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
 import { Protocol } from '@uniswap/router-sdk'
-import { AlphaRouter, ChainId } from '@uniswap/smart-order-router'
 import { RPC_PROVIDERS } from 'constants/networks'
+import { AlphaRouter, ChainId } from 'ethf-smart-order-router'
 import { getClientSideQuote, toSupportedChainId } from 'lib/hooks/routing/clientSideSmartOrderRouter'
 import ms from 'ms.macro'
-import qs from 'qs'
 
+// import qs from 'qs'
 import { GetQuoteResult } from './types'
 
 export enum RouterPreference {
@@ -85,7 +85,7 @@ export const routingApi = createApi({
         routerPreference: RouterPreference
         type: 'exactIn' | 'exactOut'
       }
-    >({
+      >({
       async queryFn(args, _api, _extraOptions, fetch) {
         const { tokenInAddress, tokenInChainId, tokenOutAddress, tokenOutChainId, amount, routerPreference, type } =
           args
@@ -93,27 +93,27 @@ export const routingApi = createApi({
         let result
 
         try {
-          if (routerPreference === RouterPreference.API) {
-            const query = qs.stringify({
-              ...API_QUERY_PARAMS,
-              tokenInAddress,
-              tokenInChainId,
-              tokenOutAddress,
-              tokenOutChainId,
-              amount,
-              type,
-            })
-            result = await fetch(`quote?${query}`)
-          } else {
-            const router = getRouter(args.tokenInChainId)
-            result = await getClientSideQuote(
-              args,
-              router,
-              // TODO(zzmp): Use PRICE_PARAMS for RouterPreference.PRICE.
-              // This change is intentionally being deferred to first see what effect router caching has.
-              CLIENT_PARAMS
-            )
-          }
+          // if (routerPreference === RouterPreference.API) {
+          //   const query = qs.stringify({
+          //     ...API_QUERY_PARAMS,
+          //     tokenInAddress,
+          //     tokenInChainId,
+          //     tokenOutAddress,
+          //     tokenOutChainId,
+          //     amount,
+          //     type,
+          //   })
+          //   result = await fetch(`quote?${query}`)
+          // } else {
+          const router = getRouter(args.tokenInChainId)
+          result = await getClientSideQuote(
+            args,
+            router,
+            // TODO(zzmp): Use PRICE_PARAMS for RouterPreference.PRICE.
+            // This change is intentionally being deferred to first see what effect router caching has.
+            CLIENT_PARAMS
+          )
+          // }
 
           return { data: result.data as GetQuoteResult }
         } catch (e) {
