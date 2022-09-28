@@ -85,7 +85,7 @@ export const routingApi = createApi({
         routerPreference: RouterPreference
         type: 'exactIn' | 'exactOut'
       }
-      >({
+    >({
       async queryFn(args, _api, _extraOptions, fetch) {
         const { tokenInAddress, tokenInChainId, tokenOutAddress, tokenOutChainId, amount, routerPreference, type } =
           args
