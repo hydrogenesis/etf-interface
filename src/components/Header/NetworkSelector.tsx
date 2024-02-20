@@ -205,7 +205,7 @@ const ExplorerLabel = ({ chainId }: { chainId: SupportedChainId }) => {
     case SupportedChainId.CELO_ALFAJORES:
       return <Trans>Blockscout</Trans>
     default:
-      return <Trans>Etherscan</Trans>
+      return <Trans>Blockscout</Trans>
   }
 }
 
@@ -273,10 +273,10 @@ function Row({
 
 const NETWORK_SELECTOR_CHAINS = [
   SupportedChainId.MAINNET,
-  SupportedChainId.POLYGON,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.CELO,
+  // SupportedChainId.POLYGON,
+  // SupportedChainId.OPTIMISM,
+  // SupportedChainId.ARBITRUM_ONE,
+  // SupportedChainId.CELO,
 ]
 
 export default function NetworkSelector() {

@@ -243,21 +243,21 @@ function V2PairMigration({
   const isArgentWallet = useIsArgentWallet()
 
   const approve = useCallback(async () => {
-    if (isNotUniswap || isArgentWallet) {
-      // sushi has to be manually approved
-      await approveManually()
-    } else if (gatherPermitSignature) {
-      try {
-        await gatherPermitSignature()
-      } catch (error) {
-        // try to approve if gatherPermitSignature failed for any reason other than the user rejecting it
-        if (error?.code !== 4001) {
-          await approveManually()
-        }
-      }
-    } else {
-      await approveManually()
-    }
+    // if (isNotUniswap || isArgentWallet) {
+    //   // sushi has to be manually approved
+    //   await approveManually()
+    // } else if (gatherPermitSignature) {
+    //   try {
+    //     await gatherPermitSignature()
+    //   } catch (error) {
+    //     // try to approve if gatherPermitSignature failed for any reason other than the user rejecting it
+    //     if (error?.code !== 4001) {
+    //       await approveManually()
+    //     }
+    //   }
+    // } else {
+    await approveManually()
+    // }
   }, [isNotUniswap, isArgentWallet, gatherPermitSignature, approveManually])
 
   const addTransaction = useTransactionAdder()

@@ -81,7 +81,7 @@ export const CollectionRow = ({ collection, isHovered, setHoveredIndex, toggleOp
       {collection.floorPrice ? (
         <Column className={styles.suggestionSecondaryContainer}>
           <Row gap="4">
-            <Box className={styles.primaryText}>{ethNumberStandardFormatter(collection.floorPrice)} ETH</Box>
+            <Box className={styles.primaryText}>{ethNumberStandardFormatter(collection.floorPrice)} ETF</Box>
           </Row>
           <Box className={styles.secondaryText}>Floor</Box>
         </Column>

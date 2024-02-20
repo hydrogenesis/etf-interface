@@ -147,7 +147,7 @@ export default function Polling() {
                     text={
                       <Trans>
                         The current fast gas amount for sending a transaction on L1. Gas fees are paid in
-                        Ethereum&apos;s native currency Ether (ETH) and denominated in GWEI.
+                        Ethereum&apos;s native currency Ether (ETF) and denominated in GWEI.
                       </Trans>
                     }
                   >

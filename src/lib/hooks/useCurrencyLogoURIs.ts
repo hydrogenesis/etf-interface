@@ -4,10 +4,10 @@ import useHttpLocations from 'hooks/useHttpLocations'
 import { useMemo } from 'react'
 import { WrappedTokenInfo } from 'state/lists/wrappedTokenInfo'
 
-import EthereumLogo from '../../assets/images/ethereum-logo.png'
+import EthereumLogo from '../../assets/images/etf-logo.png'
 import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
-import { isCelo, nativeOnChain } from '../../constants/tokens'
+import { isCelo, nativeOnChain, WRAPPED_NATIVE_CURRENCY } from '../../constants/tokens'
 
 type Network = 'ethereum' | 'arbitrum' | 'optimism' | 'polygon'
 
@@ -42,6 +42,9 @@ export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.MA
 function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.MAINNET): string | void {
   const networkName = chainIdToNetworkName(chainId)
   const networksWithUrls = [SupportedChainId.ARBITRUM_ONE, SupportedChainId.MAINNET, SupportedChainId.OPTIMISM]
+  if (address == WRAPPED_NATIVE_CURRENCY[chainId]?.address) {
+    return EthereumLogo
+  }
   if (networksWithUrls.includes(chainId)) {
     return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
   }
@@ -56,6 +59,7 @@ function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedC
 
 export default function useCurrencyLogoURIs(currency?: Currency | null): string[] {
   const locations = useHttpLocations(currency instanceof WrappedTokenInfo ? currency.logoURI : undefined)
+  console.log('locations ', currency, locations)
   return useMemo(() => {
     const logoURIs = [...locations]
     if (currency) {

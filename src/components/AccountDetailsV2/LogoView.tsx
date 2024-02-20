@@ -48,8 +48,8 @@ const getCurrency = ({ info, chainId }: { info: TransactionInfo; chainId: number
     case TransactionType.WRAP:
       const { unwrapped } = info
       const native = info.chainId ? nativeOnChain(info.chainId) : undefined
-      const base = 'ETH'
-      const wrappedCurrency = native?.wrapped.address ?? 'WETH'
+      const base = 'ETF'
+      const wrappedCurrency = native?.wrapped.address ?? 'WETF'
       return { currencyId0: unwrapped ? wrappedCurrency : base, currencyId1: unwrapped ? base : wrappedCurrency }
     case TransactionType.COLLECT_FEES:
       const { currencyId0, currencyId1 } = info

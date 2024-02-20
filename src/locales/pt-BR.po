@@ -2704,8 +2704,8 @@ msgid "{0} Deposited"
 msgstr "{0} Depositados"
 
 #: src/components/earn/PoolCard.tsx
-msgid "{0} ETH"
-msgstr "{0} ETH"
+msgid "{0} ETF"
+msgstr "{0} ETF"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 #: src/pages/RemoveLiquidity/V3.tsx
